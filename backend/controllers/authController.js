@@ -41,7 +41,7 @@ export const register = async (req, res) => {
 
 // LOGIN
 export const login = async (req, res) => {
-  const { email, password } = req.body || {}; // ✅ added "|| {}" to prevent undefined
+  const { email, password } = req.body || {}; 
 
   if (!email || !password) {
     return res.json({
